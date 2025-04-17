@@ -9,6 +9,7 @@ function About({}: Props) {
         <h1 className="text-4xl font-bold text-center mb-10 text-blue-900">
           About Us
         </h1>
+
         <section className="mb-8">
           <h2 className="text-2xl font-semibold text-blue-800 mb-2">
             Welcome to Victory Bible Church – Solid Rock Sanctuary
@@ -16,44 +17,44 @@ function About({}: Props) {
           <p>
             At Victory Bible Church – Solid Rock Sanctuary, we are a
             Christ-centered, Spirit-filled community dedicated to transforming
-            lives through the power of God's Word, prayer, and love. Our mission
-            is to build a strong foundation in Christ for individuals and
-            families, equipping them to live victorious lives in every area.
+            lives through the power of God's Word, prayer, and love.
           </p>
         </section>
+
         <section className="mb-8">
           <h2 className="text-2xl font-semibold text-blue-800 mb-2">
             Our Mission
           </h2>
           <p>
-            To raise believers who are rooted in the Word of God, filled with
-            the Holy Spirit, and walking in victory—impacting their communities
-            and nations for Christ.
+            To convert people within our community in all creative ways,
+            developing them into fully functioning followers of Jesus Christ.
           </p>
         </section>
+
+        <section className="mb-8">
+          <h2 className="text-2xl font-semibold text-blue-800 mb-2">
+            Our Vision
+          </h2>
+          <p>
+            Our vision is to be a Biblically Functioning Community of Followers
+            of Jesus Christ in order to reach mankind with the gospel within
+            their geographic, demographic, cultural, and spiritual context.
+          </p>
+        </section>
+
         <section className="mb-8">
           <h2 className="text-2xl font-semibold text-blue-800 mb-2">
             What We Believe
           </h2>
           <ul className="list-disc list-inside space-y-2">
-            <li>
-              The Bible is the inspired Word of God, our ultimate authority.
-            </li>
-            <li>
-              Jesus Christ is the Son of God, our Lord and Savior, who died and
-              rose again.
-            </li>
+            <li>The Bible is the inspired Word of God, our ultimate authority.</li>
+            <li>Jesus Christ is the Son of God, our Lord and Savior, who died and rose again.</li>
             <li>Salvation is by grace through faith in Christ alone.</li>
-            <li>
-              The Holy Spirit empowers believers for godly living and effective
-              ministry.
-            </li>
-            <li>
-              The Church is the body of Christ, called to worship, fellowship,
-              serve, and evangelize.
-            </li>
+            <li>The Holy Spirit empowers believers for godly living and effective ministry.</li>
+            <li>The Church is the body of Christ, called to worship, fellowship, serve, and evangelize.</li>
           </ul>
         </section>
+
         <section className="mb-8">
           <h2 className="text-2xl font-semibold text-blue-800 mb-2">
             Our History
@@ -67,22 +68,43 @@ function About({}: Props) {
             serve people intentionally.
           </p>
         </section>
+
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-blue-800 mb-2">
-            Leadership
-          </h2>
-          <p>
-            <span className="font-semibold">Senior Pastor:</span> [Insert Name]
-            – A visionary leader with a heart for teaching God’s Word and
-            empowering believers.
-          </p>
-          <p className="mt-2">
-            <span className="font-semibold">
-              Associate Pastors & Ministry Leaders:
-            </span>{" "}
-            [Insert brief details about other pastors or leaders]
-          </p>
+          <h2 className="text-2xl font-semibold text-blue-800 mb-2">Leadership</h2>
+          <ul className="list-disc list-inside space-y-2">
+            <li>
+              <span className="font-semibold">Presiding Bishop of VBCI Worldwide:</span>{" "}
+              Bishop Nii Nabi Apiakai Tackie Yarboi (Bishop N.A. Tackie Yarboi)
+              <ul className="list-disc list-inside ml-6 mt-1">
+                <li>
+                  <span className="font-semibold">North America Regional Overseer:</span>{" "}
+                  Bishop Elijah P. Saforo (Bishop Elijah Patrick Saforo)
+                  <ul className="list-disc list-inside ml-6 mt-1">
+                    <li>
+                      <span className="font-semibold">Resident Pastor – Solid Rock Sanctuary:</span>{" "}
+                      Rev. Godwin Aryeetey
+                      <ul className="list-disc list-inside ml-6 mt-1">
+                        <li>
+                          <span className="font-semibold">Assistant Pastor:</span>{" "}
+                          Pastor Larry Awagah
+                        </li>
+                        <li>
+                          <span className="font-semibold">Deaconess:</span>{" "}
+                          Juliana
+                        </li>
+                        <li>
+                          <span className="font-semibold">Lady Pastor:</span>{" "}
+                          Getrude Abbey
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </section>
+
         <section>
           <h2 className="text-2xl font-semibold text-blue-800 mb-2">
             Join the Family
