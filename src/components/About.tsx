@@ -71,6 +71,7 @@ function About({}: Props) {
 
         <section className="mb-8">
           <h2 className="text-2xl font-semibold text-blue-800 mb-2">Leadership</h2>
+          
           <ul className="list-disc list-inside space-y-2">
             <li>
               <span className="font-semibold">Presiding Bishop of VBCI Worldwide:</span>{" "}
@@ -103,6 +104,24 @@ function About({}: Props) {
               </ul>
             </li>
           </ul>
+
+          <div className="mt-6">
+            <h3 className="text-xl font-semibold text-blue-700">Pastors</h3>
+            <ul className="list-disc list-inside space-y-1 mt-2">
+              <li><strong>Senior Pastor:</strong> [Insert Name] – A visionary leader with a heart for teaching God’s Word and empowering believers.</li>
+              <li><strong>Associate Pastor:</strong> [Insert Name] – Assists in shepherding the church and leading key ministries.</li>
+              <li><strong>Youth Pastor:</strong> [Insert Name] – Passionate about mentoring and equipping the next generation.</li>
+            </ul>
+          </div>
+
+          <div className="mt-6">
+            <h3 className="text-xl font-semibold text-blue-700">Deaconesses</h3>
+            <ul className="list-disc list-inside space-y-1 mt-2">
+              <li><strong>Deaconess [Name]:</strong> Oversees hospitality and women’s ministry.</li>
+              <li><strong>Deaconess [Name]:</strong> Supports prayer and outreach efforts.</li>
+              <li><strong>Deaconess [Name]:</strong> Provides counseling and care for members.</li>
+            </ul>
+          </div>
         </section>
 
         <section>
