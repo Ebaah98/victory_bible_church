@@ -10,7 +10,6 @@ function Navbar({}: Props) {
   return (
     <nav className="bg-violet-600 p-4 shadow-2xl">
       <div className="container mx-auto flex justify-between items-center">
-        <div className="text-white text-xl font-bold">SRS</div>
         <button
           className="text-white md:hidden"
           onClick={() => setIsOpen(!isOpen)}
@@ -23,19 +22,23 @@ function Navbar({}: Props) {
             isOpen ? "block" : "hidden"
           } text-white`}
         >
-          <li  className="font-bold hover:text-violet-300 transition-all">
-            <a href="#home" >Home</a>
+          <li className="font-bold hover:text-violet-300 transition-all">
+            <a href="#">Home</a>
           </li>
           <li className="font-bold hover:text-violet-300 transition-all">
             <a href="#about">About</a>
           </li>
           <li className="font-bold hover:text-violet-300 transition-all">
-            <a href="#">Service</a>
+            <a href="#department">Department</a>
           </li>
           <li className="font-bold hover:text-violet-300 transition-all">
-            <a href="#">Contact</a>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
+
+        <a className="p-2 px-4 bg-violet-400 text-white rounded" href="#donate">
+          Donate
+        </a>
       </div>
     </nav>
   );

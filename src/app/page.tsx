@@ -6,6 +6,8 @@ import Event from "@/components/Event";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Testimony from "@/components/Testimony";
+import Donation from "@/components/Donation";
+import Departments from "@/components/Department";
 
 export default function Home() {
   return (
@@ -15,8 +17,10 @@ export default function Home() {
       <Event />
       <Welcome />
       <About />
+      <Departments/>
       <Contact />
-      <Testimony/>
+      <Testimony />
+      <Donation/>
       <Footer/>
   </div>
   );

@@ -2,24 +2,11 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
+import AppConstant from '@/app'
 import "swiper/css";
 import 'swiper/css/autoplay'
 
 type Props = {};
-
-const eventImages = [
-  "/pastor2.png",
-  "/pastor3.jpg",
-  "/pastor2.png",
-  "/pastor3.jpg",
-  "/pastor2.png",
-  "/pastor3.jpg",
-  "/pastor2.png",
-  "/pastor3.jpg",
-  "/pastor2.png",
-  "/pastor3.jpg",
- 
-];
 
 function Event({}: Props) {
   return (
@@ -27,16 +14,18 @@ function Event({}: Props) {
           <Swiper
               modules={[Autoplay]}
         draggable
-        spaceBetween={1}
-        autoplay
+        spaceBetween={20}
+        autoplay={{
+          delay:2000
+        }}
               loop
-              slidesPerView={3}
-
+        slidesPerView={3}
+      
       >
-        {eventImages.map((res) => {
+        {AppConstant.eventImages.map((res) => {
           return (
-            <SwiperSlide>
-              <img src={res} alt={res} />
+            <SwiperSlide >
+              <img src={res} alt={res} className="aspect-square rounded-lg" />
             </SwiperSlide>
           );
         })}
