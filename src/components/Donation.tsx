@@ -16,7 +16,7 @@ function Donation() {
         </h3>
         <ul className="space-y-2 text-gray-700">
           <li>
-            <strong>Cash App:</strong> $Subciyonkers
+            <strong>Cash App:</strong> $vbciyonkers
           </li>
           <li>
             <strong>Cash App Email:</strong> <small>{AppConstant.churchEmail}</small>
