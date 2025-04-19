@@ -90,12 +90,12 @@ function About({}: Props) {
                           Pastor Larry Awagah
                         </li>
                         <li>
-                          <span className="font-semibold">Deaconess:</span>{" "}
-                          Juliana
-                        </li>
-                        <li>
                           <span className="font-semibold">Lady Pastor:</span>{" "}
                           Getrude Abbey
+                        </li>
+                        <li>
+                          <span className="font-semibold">Deaconess:</span>{" "}
+                          Juliana Awagah
                         </li>
                       </ul>
                     </li>
@@ -108,18 +108,16 @@ function About({}: Props) {
           <div className="mt-6">
             <h3 className="text-xl font-semibold text-blue-700">Pastors</h3>
             <ul className="list-disc list-inside space-y-1 mt-2">
-              <li><strong>Senior Pastor:</strong> [Insert Name] – A visionary leader with a heart for teaching God’s Word and empowering believers.</li>
-              <li><strong>Associate Pastor:</strong> [Insert Name] – Assists in shepherding the church and leading key ministries.</li>
-              <li><strong>Youth Pastor:</strong> [Insert Name] – Passionate about mentoring and equipping the next generation.</li>
+              <li><strong>Rev. Godwin Aryeetey:</strong> Resident Pastor – Solid Rock Sanctuary</li>
+              <li><strong>Pastor Larry Awagah:</strong> Assistant Pastor</li>
+              <li><strong>Lady Pastor Getrude Abbey:</strong> Ministering to women and families</li>
             </ul>
           </div>
 
           <div className="mt-6">
-            <h3 className="text-xl font-semibold text-blue-700">Deaconesses</h3>
+            <h3 className="text-xl font-semibold text-blue-700">Deaconess</h3>
             <ul className="list-disc list-inside space-y-1 mt-2">
-              <li><strong>Deaconess [Name]:</strong> Oversees hospitality and women’s ministry.</li>
-              <li><strong>Deaconess [Name]:</strong> Supports prayer and outreach efforts.</li>
-              <li><strong>Deaconess [Name]:</strong> Provides counseling and care for members.</li>
+              <li><strong>Deaconess Juliana Awagah:</strong> Oversees hospitality, prayer, and women’s ministry</li>
             </ul>
           </div>
         </section>
