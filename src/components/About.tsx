@@ -71,6 +71,7 @@ function About({}: Props) {
 
         <section className="mb-8">
           <h2 className="text-2xl font-semibold text-blue-800 mb-2">Leadership</h2>
+          
           <ul className="list-disc list-inside space-y-2">
             <li>
               <span className="font-semibold">Presiding Bishop of VBCI Worldwide:</span>{" "}
