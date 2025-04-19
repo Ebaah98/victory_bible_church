@@ -71,7 +71,6 @@ function About({}: Props) {
 
         <section className="mb-8">
           <h2 className="text-2xl font-semibold text-blue-800 mb-2">Leadership</h2>
-          
           <ul className="list-disc list-inside space-y-2">
             <li>
               <span className="font-semibold">Presiding Bishop of VBCI Worldwide:</span>{" "}
@@ -79,7 +78,7 @@ function About({}: Props) {
               <ul className="list-disc list-inside ml-6 mt-1">
                 <li>
                   <span className="font-semibold">North America Regional Overseer:</span>{" "}
-                  Bishop Elijah P. Saforo (Bishop Elijah Patrick Saforo)
+                  Bishop Elijah P. Saforo
                   <ul className="list-disc list-inside ml-6 mt-1">
                     <li>
                       <span className="font-semibold">Resident Pastor – Solid Rock Sanctuary:</span>{" "}
@@ -104,22 +103,6 @@ function About({}: Props) {
               </ul>
             </li>
           </ul>
-
-          <div className="mt-6">
-            <h3 className="text-xl font-semibold text-blue-700">Pastors</h3>
-            <ul className="list-disc list-inside space-y-1 mt-2">
-              <li><strong>Rev. Godwin Aryeetey:</strong> Resident Pastor – Solid Rock Sanctuary</li>
-              <li><strong>Pastor Larry Awagah:</strong> Assistant Pastor</li>
-              <li><strong>Lady Pastor Getrude Abbey:</strong> Ministering to women and families</li>
-            </ul>
-          </div>
-
-          <div className="mt-6">
-            <h3 className="text-xl font-semibold text-blue-700">Deaconess</h3>
-            <ul className="list-disc list-inside space-y-1 mt-2">
-              <li><strong>Deaconess Juliana Awagah:</strong> Oversees hospitality, prayer, and women’s ministry</li>
-            </ul>
-          </div>
         </section>
 
         <section>
