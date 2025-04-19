@@ -89,12 +89,12 @@ function About({}: Props) {
                           Pastor Larry Awagah
                         </li>
                         <li>
-                          <span className="font-semibold">Deaconess:</span>{" "}
-                          Juliana
-                        </li>
-                        <li>
                           <span className="font-semibold">Lady Pastor:</span>{" "}
                           Getrude Abbey
+                        </li>
+                        <li>
+                          <span className="font-semibold">Deaconess:</span>{" "}
+                          Juliana Awagah
                         </li>
                       </ul>
                     </li>
@@ -103,6 +103,22 @@ function About({}: Props) {
               </ul>
             </li>
           </ul>
+
+          <div className="mt-6">
+            <h3 className="text-xl font-semibold text-blue-700">Pastors</h3>
+            <ul className="list-disc list-inside space-y-1 mt-2">
+              <li><strong>Rev. Godwin Aryeetey:</strong> Resident Pastor – Solid Rock Sanctuary</li>
+              <li><strong>Pastor Larry Awagah:</strong> Assistant Pastor</li>
+              <li><strong>Lady Pastor Getrude Abbey:</strong> Ministering to women and families</li>
+            </ul>
+          </div>
+
+          <div className="mt-6">
+            <h3 className="text-xl font-semibold text-blue-700">Deaconess</h3>
+            <ul className="list-disc list-inside space-y-1 mt-2">
+              <li><strong>Deaconess Juliana Awagah:</strong> Oversees hospitality, prayer, and women’s ministry</li>
+            </ul>
+          </div>
         </section>
 
         <section>
