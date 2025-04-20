@@ -23,16 +23,6 @@ function About({}: Props) {
 
         <section className="mb-8">
           <h2 className="text-2xl font-semibold text-blue-800 mb-2">
-            Our Mission
-          </h2>
-          <p>
-            To convert people within our community in all creative ways,
-            developing them into fully functioning followers of Jesus Christ.
-          </p>
-        </section>
-
-        <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-blue-800 mb-2">
             Our Vision
           </h2>
           <p>
@@ -62,10 +52,12 @@ function About({}: Props) {
           <p>
             Victory Bible Church – Solid Rock Sanctuary began with a small group
             of faithful believers, united by a desire to go deeper in God and
-            raise a generation built on the Rock—Jesus Christ. Through prayer,
-            dedication, and the leading of the Holy Spirit, we've grown into a
-            vibrant community that continues to pursue God passionately and
-            serve people intentionally.
+            raise a generation built on the Rock—Jesus Christ. Under the divine
+            direction of our founding father, Bishop N.A. Tackie Yarboi, and
+            through prayer and the leading of the Holy Spirit, God saw it fit
+            that we would spread His Word in Yonkers, New York. From humble
+            beginnings, we’ve grown into a vibrant and passionate community
+            committed to pursuing God and serving His people with purpose.
           </p>
         </section>
 
