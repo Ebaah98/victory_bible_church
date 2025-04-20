@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import AppConstant from "@/app";
 type Props = {};
 
+
 export default function Footer() {
   const currentYear = (new Date).getFullYear();
 
@@ -20,14 +21,8 @@ export default function Footer() {
         </div>
 
         <div className="flex md:flex-col items-start gap-4 md:w-1/3 flex-wrap">
-          <p className="font-bold text-lg">Victory Bible Church International Solid Rock Sanctuary (Yonkers)</p>
-          <p>You are welcome!</p>
-          <p>**Sunday Services**: 10:00 am, 11:00 am, 6:00 pm</p>
-          <p>**Wednesday Service**: 7:00 pm</p>
-          <p>**Prayer Times (Monday to Thursday)**: 12:00 pm - 1:00 pm EST (via Zoom)</p>
-          <p>**Tuesday (AVENOR PARK Prayer)**: 6:00 pm - 7:30 pm EST (In-person at Church or Zoom)</p>
-          <p>**Friday (AIJALON HOUR)**: 7:00 pm - 8:30 pm EST (via Zoom)</p>
-
+          <p className="font-bold text-lg">{AppConstant.churchAddress}</p>
+          <p>Sunday at 10:00 am, 11:00 am, 6:00 pm, Wednesday at 7:00 pm</p>
           <a className="font-bold" href={`tel:${AppConstant.phoneNumber}`}>
             {AppConstant.phoneNumber}
           </a>
