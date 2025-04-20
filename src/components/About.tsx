@@ -34,6 +34,17 @@ function About({}: Props) {
 
         <section className="mb-8">
           <h2 className="text-2xl font-semibold text-blue-800 mb-2">
+            Our Mission
+          </h2>
+          <p>
+            To bring people to the saving knowledge of Jesus Christ and disciple
+            them into spiritual maturity so they can discover and fulfill their
+            God-given purpose.
+          </p>
+        </section>
+
+        <section className="mb-8">
+          <h2 className="text-2xl font-semibold text-blue-800 mb-2">
             What We Believe
           </h2>
           <ul className="list-disc list-inside space-y-2">
