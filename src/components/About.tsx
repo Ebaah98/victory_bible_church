@@ -26,7 +26,7 @@ function About({}: Props) {
             Our Vision
           </h2>
           <p>
-            Our vision is to be a Biblically Functioning Community of Followers
+            Our vision is to be a Biblically functioning community of followers
             of Jesus Christ in order to reach mankind with the gospel within
             their geographic, demographic, cultural, and spiritual context.
           </p>
@@ -37,9 +37,8 @@ function About({}: Props) {
             Our Mission
           </h2>
           <p>
-            To bring people to the saving knowledge of Jesus Christ and disciple
-            them into spiritual maturity so they can discover and fulfill their
-            God-given purpose.
+            “To convert people within our community in all creative ways,
+            developing them into fully functioning followers of Jesus Christ.”
           </p>
         </section>
 
