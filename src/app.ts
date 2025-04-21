@@ -1,7 +1,7 @@
 export default {
   testimonies: [
     {
-      title: "Barren ",
+      title: "Barren Jada Forson",
       text: '"Doctors said I’d never have children. But through prayer and faith, God gave me not one, but two beautiful daughters. What man said was impossible, God made possible."',
       img: "/5.jpg",
     },
