@@ -1,6 +1,14 @@
-import React from "react";  // Ensure React is imported if needed.
+import React from "react";
 
 const ChurchFlyer = () => {
+  const AppConstant = {
+    churchName: "Victory Bible Church International",
+    churchAddress: "123 Church St, Yonkers, NY",
+    ZOOM_LINK: "https://us02web.zoom.us/j/3202413847?pwd=iLzW1Gkoybk",
+    YOUTUBE_LINK: "https://www.youtube.com/channel/your-channel",
+    FACEBOOK_LINK: "https://www.facebook.com/yourpage",
+  };
+
   return (
     <div
       className="flex items-center bg-[#3d0c2f] justify-center text-white font-sans p-[5%] md:p-[10%] border-4 shadow-4xl"
@@ -13,7 +21,6 @@ const ChurchFlyer = () => {
             Victory Bible Church International
           </h2>
           <h3 className="text-sm text-gray-400 font-medium">
-            {/* AppConstant.churchName should be defined and available */}
             {AppConstant.churchName} (Yonkers)
           </h3>
           <p className="italic text-yellow-400 mt-2">You are welcome</p>
@@ -38,7 +45,7 @@ const ChurchFlyer = () => {
             <h4 className="text-xl font-bold text-white">Monday – Leadership Meeting</h4>
             <p className="text-yellow-300">via Zoom</p>
             <a
-              href="https://us02web.zoom.us/j/3202413847?pwd=iLzW1Gkoybk"
+              href={AppConstant.ZOOM_LINK}
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-300 underline hover:text-blue-400"
