@@ -3,7 +3,7 @@ import React from "react";
 const ChurchFlyer = () => {
   const AppConstant = {
     churchName: "Victory Bible Church International",
-    churchAddress: "123 Church St, Yonkers, NY",
+    churchAddress: "1 Tuckahoe Rd, Yonkers, NY 10710",
     ZOOM_LINK: "https://us02web.zoom.us/j/3202413847?pwd=iLzW1Gkoybk",
     YOUTUBE_LINK: "https://www.youtube.com/channel/your-channel",
     FACEBOOK_LINK: "https://www.facebook.com/yourpage",
@@ -77,14 +77,6 @@ const ChurchFlyer = () => {
           >
             General Zoom Access
           </a>
-        </div>
-
-        {/* Morning Prayer Line */}
-        <div className="mt-6 bg-[#4a1030] rounded-xl p-4">
-          <h4 className="text-xl font-bold text-white text-center">Morning Prayer Line</h4>
-          <p className="text-sm text-gray-300 text-center mt-1">Monday – Friday: 5:00 am – 6:00 am</p>
-          <p className="text-sm text-gray-300 text-center">Phone: (605) 313-4166</p>
-          <p className="text-sm text-gray-300 text-center">Access Code: 523570#</p>
         </div>
 
         {/* Church Address */}
