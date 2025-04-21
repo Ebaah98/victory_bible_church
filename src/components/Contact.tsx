@@ -43,7 +43,7 @@ const ChurchFlyer = () => {
           {/* Monday – Leadership Meeting */}
           <div>
             <h4 className="text-xl font-bold text-white">Monday – Leadership Meeting</h4>
-            <p className="text-yellow-300">via Zoom</p>
+            <p className="text-yellow-300">9:00 pm EST (via Zoom)</p>
             <a
               href={AppConstant.ZOOM_LINK}
               target="_blank"
