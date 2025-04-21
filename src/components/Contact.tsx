@@ -1,11 +1,6 @@
-import React from "react";
-import AppConstant from "@/app";
+import React from "react";  // Ensure React is imported if needed.
 
-export default function Contact() {
-  return <ChurchFlyer />;
-}
-
-function ChurchFlyer() {
+const ChurchFlyer = () => {
   return (
     <div
       className="flex items-center bg-[#3d0c2f] justify-center text-white font-sans p-[5%] md:p-[10%] border-4 shadow-4xl"
@@ -18,6 +13,7 @@ function ChurchFlyer() {
             Victory Bible Church International
           </h2>
           <h3 className="text-sm text-gray-400 font-medium">
+            {/* AppConstant.churchName should be defined and available */}
             {AppConstant.churchName} (Yonkers)
           </h3>
           <p className="italic text-yellow-400 mt-2">You are welcome</p>
@@ -115,4 +111,14 @@ function ChurchFlyer() {
               {/* Facebook SVG */}
               <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 48 48">
                 <path fill="#039be5" d="M24 5A19 19 0 1 0 24 43A19 19 0 1 0 24 5Z"></path>
-                <path fill="#fff" d="M26.572,29.036h4.917l0.772-4.995h-5.69v-2.73c0-2.075,0.678-3.915,2.619-3.915h3.119v-4.359c-0.548
+                <path fill="#fff" d="M26.572,29.036h4.917l0.772-4.995h-5.69v-2.73c0-2.075,0.678-3.915,2.619-3.915h3.119v-4.359c-0.548-0.074-1.707-0.236-3.897-0.236c-4.573,0-7.254,2.415-7.254,7.917v3.323h-4.701v4.995h4.701v13.729C22.089,42.905,23.032,43,24,43c0.875,0,1.729-0.08,2.572-0.194V29.036z"></path>
+              </svg>
+            </a>
+          </span>
+        </p>
+      </div>
+    </div>
+  );
+}
+
+export default ChurchFlyer;
