@@ -3,17 +3,17 @@ export default {
     {
       title: "Barren - Jada Forson",
       text: '"Doctors said I’d never have children. But through prayer and faith, God gave me not one, but two beautiful daughters. What man said was impossible, God made possible."',
-      img: "/5.jpg",
+      img: "/5.JPG",
     },
     {
       title: "A Son’s Healing, A Life Transformed – Austin Asante",
       text: '"I challenged God to save my dying son—and He did. My son lived, and so did my faith. I gave my life to Christ that day and have never turned back."',
-      img: "/1.jpg",
+      img: "/1.JPG",
     },
     {
       title: "Daily Protection & Peace – Na Swish ⭐️",
       text: '"God allows me to wake up every day, go to work, and come back home safely—with no harm to me or my family. That alone is a blessing I don’t take for granted."',
-      img: "/2.jpg",
+      img: "/2.JPG",
     },
   ],
   departments: [
