@@ -1,4 +1,5 @@
 import React from "react";
+import AppConstant from "@/app";
 
 type Props = {};
 
@@ -6,39 +7,32 @@ function About({}: Props) {
   return (
     <div className="w-screen" id="about">
       <div className="max-w-4xl mx-auto px-4 py-10 text-gray-800">
-        <h1 className="text-4xl font-bold text-center mb-10 text-blue-900">
-          About Us
+        <h1 className="text-4xl font-bold text-center mb-2 text-blue-900">
+          VICTORY BIBLE CHURCH INTERNATIONAL - USA
         </h1>
-
-        <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-blue-800 mb-2">
-            Welcome to Victory Bible Church – Solid Rock Sanctuary
-          </h2>
-          <p>
-            At Victory Bible Church – Solid Rock Sanctuary, we are a
-            Christ-centered, Spirit-filled community dedicated to transforming
-            lives through the power of God's Word, prayer, and love.
-          </p>
-        </section>
+        <h2 className="text-md text-center italic mb-10 text-gray-600">
+          "Raising the Foundations for Many Generations" — Isaiah 58:12
+        </h2>
 
         <section className="mb-8">
           <h2 className="text-2xl font-semibold text-blue-800 mb-2">
             Our Vision
           </h2>
           <p>
-            Our vision is to be a Biblically functioning community of followers
+            Our vision is to be a Biblically Functioning Community of Followers
             of Jesus Christ in order to reach mankind with the gospel within
             their geographic, demographic, cultural, and spiritual context.
           </p>
         </section>
 
-        <section className="mb-8">
+        {/* Official VBCI Mission Statement */}
+        <section className="mb-8 bg-blue-50 p-4 rounded-xl shadow-sm">
           <h2 className="text-2xl font-semibold text-blue-800 mb-2">
-            Our Mission
+            VBCI Mission Statement
           </h2>
-          <p>
-            “To convert people within our community in all creative ways,
-            developing them into fully functioning followers of Jesus Christ.”
+          <p className="font-bold uppercase tracking-wide text-gray-700">
+            To convert people within our community in all creative ways,
+            developing them into fully functioning followers of Jesus Christ.
           </p>
         </section>
 
@@ -74,36 +68,26 @@ function About({}: Props) {
         <section className="mb-8">
           <h2 className="text-2xl font-semibold text-blue-800 mb-2">Leadership</h2>
           <ul className="list-disc list-inside space-y-2">
-            <li>
-              <span className="font-semibold">Presiding Bishop of VBCI Worldwide:</span>{" "}
-              Bishop Nii Nabi Apiakai Tackie Yarboi (Bishop N.A. Tackie Yarboi)
-              <ul className="list-disc list-inside ml-6 mt-1">
-                <li>
-                  <span className="font-semibold">North America Regional Overseer:</span>{" "}
-                  Bishop Elijah P. Saforo
-                  <ul className="list-disc list-inside ml-6 mt-1">
-                    <li>
-                      <span className="font-semibold">Resident Pastor – Solid Rock Sanctuary:</span>{" "}
-                      Rev. Godwin Aryeetey
-                      <ul className="list-disc list-inside ml-6 mt-1">
-                        <li>
-                          <span className="font-semibold">Assistant Pastor:</span>{" "}
-                          Pastor Larry Awagah
-                        </li>
-                        <li>
-                          <span className="font-semibold">Lady Pastor:</span>{" "}
-                          Getrude Abbey
-                        </li>
-                        <li>
-                          <span className="font-semibold">Deaconess:</span>{" "}
-                          Juliana Awagah
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
+            <div className="min-h-screen bg-gray-100 flex items-center justify-center p-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full max-w-6xl">
+                {AppConstant.PASTORS.map((pastor, index) => (
+                  <div
+                    key={index}
+                    className="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300"
+                  >
+                    <img
+                      src={pastor.image}
+                      alt={pastor.name}
+                      className="w-full object-cover aspect-square"
+                    />
+                    <div className="p-4 text-center">
+                      <h2 className="text-xl font-semibold text-gray-800">{pastor.name}</h2>
+                      <p className="text-md text-gray-600">{pastor.role}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
           </ul>
         </section>
 

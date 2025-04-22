@@ -52,15 +52,18 @@ export default {
   eventImages: [
     '/3.JPEG',
     '/7.png',
-    '/9.png',
+    '/24.JPG',
     '/10.jpg',
     '/11.JPG',
     '/12.JPG',
-    '/13.JPG',
+    '/22.JPG',
     '/14.JPG',
     '/15.JPG',
     '/16.JPG',
     '/17.JPG',
+    '/13.JPG',
+    '/9.png',
+    '/25.JPG',
     'event_6.JPEG'
     
   ],
@@ -68,5 +71,34 @@ export default {
   ASSOCIATE_PASTOR: ["Larry Awagah As. Pastory", "Gertrude Abbey"],
   ZOOM_LIVE: "https://us02web.zoom.us/j/3202413847?pwd=iLzW1Gkoybk",
   FACEBOOK_LINK: 'https://www.facebook.com/share/1AYmXfisLb/?mibextid=wwXIfr',
-  YOUTUBE_LINK: 'https://youtube.com/@vbcisrs?si=qFxkwc5qPKwNzBTz'
+  YOUTUBE_LINK: 'https://youtube.com/@vbcisrs?si=qFxkwc5qPKwNzBTz',
+  PASTORS :[
+    {
+      name: "Bishop N.A. Tackie Yarboi",
+      role: "Presiding Bishop of VBCI Worldwide",
+      image: "/18.jpeg",
+    },
+    {
+      name: "Bishop Elijah P. Saforo",
+      role: "North America Regional Overseer",
+      image: "/19.jpeg",
+    },
+    {
+      name: "Rev. Godwin Aryeetey",
+      role: "Resident Pastor – Solid Rock Sanctuary",
+      image: "/20.jpeg",
+    },
+    {
+      name: "Pastor Larry Awagah",
+      role: "Assistant Pastor",
+      image: "/7.png",
+    },
+    {
+      name: "Lady Pastor Getrude Abbey",
+      role: "Lady Pastor",
+      image: "/9.png",
+    },
+
+  ]
 };
+
