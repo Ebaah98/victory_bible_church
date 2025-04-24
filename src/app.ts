@@ -82,7 +82,7 @@ export default {
     {
       name: "Bishop Elijah P. Saforo",
       role: "North America Regional Overseer",
-      image: "/bishop-E2.JPG",
+      image: "/Bishop-E.JPG",
     },
     {
       name: "Rev. Godwin Aryeetey",
