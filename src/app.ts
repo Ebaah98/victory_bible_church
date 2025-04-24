@@ -41,10 +41,11 @@ export default {
   churchAddress: "1 Tuckahoe Road, Yonkers, NY 10710",
 
   churchServiceTime: {
-    Tuesday: { name: "", time: "6pm - 7:30pm" },
+    Tuesday: { name: "", time: "6pm - 7:30pm",  },
     Sunday: { name: "", time: "10am - 12:30pm" },
     Friday: { name: "", time: "7pm - 8:30pm" },
     Wednesday: { name: "Home Cell", time: "8pm - 9pm" },
+    friday_church: { name: "", time: "7pm - 8:30pm" },
   },
 
   churchName: "Solid Rock Sanctuary",
@@ -81,7 +82,7 @@ export default {
     {
       name: "Bishop Elijah P. Saforo",
       role: "North America Regional Overseer",
-      image: "/19.jpeg",
+      image: "/Bishop-E.JPG",
     },
     {
       name: "Rev. Godwin Aryeetey",
@@ -91,13 +92,9 @@ export default {
     {
       name: "Pastor Larry Awagah",
       role: "Assistant Pastor",
-      image: "/7.png",
+      image: "/pastor-larry2.jpeg",
     },
-    {
-      name: "Lady Pastor Getrude Abbey",
-      role: "Lady Pastor",
-      image: "/9.png",
-    },
+    ,
 
   ]
 };

@@ -32,7 +32,7 @@ export default function Footer() {
           </a>
 
           <div className="">
-            <a className="border p-2 rounded text-white bg-violet-600" href="#">
+            <a className="border p-2 rounded text-white bg-violet-600" href="https://maps.app.goo.gl/trPPBJG33yJ8FpSd7" target="_blank">
               Directions
             </a>
           </div>

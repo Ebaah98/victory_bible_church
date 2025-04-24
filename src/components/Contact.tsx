@@ -31,39 +31,45 @@ const ChurchFlyer = () => {
           {/* Sunday Service */}
           <div>
             <h4 className="text-xl font-bold text-white">Sunday Service</h4>
-            <p className="text-yellow-300">10:00 am – 12:30 pm (In-person & Online)</p>
+            <p className="text-yellow-300">10:00 am EST – 12:30 pm EST (In-person & Online)</p>
           </div>
 
           {/* Monday – Thursday Prayer */}
           <div>
             <h4 className="text-xl font-bold text-white">Monday – Thursday Prayer</h4>
-            <p className="text-yellow-300">12:00 pm – 1:00 pm EST (via Zoom)</p>
+            <p className="text-yellow-300">12:00 pm EST – 1:00 pm EST (via Zoom)</p>
           </div>
 
           {/* Monday – Leadership Meeting */}
           <div>
             <h4 className="text-xl font-bold text-white">Monday – Leadership Meeting</h4>
-            <p className="text-yellow-300">9:00 pm EST (via Zoom)</p>
+            <p className="text-yellow-300">9:00 pm EST - 10:00 pm EST (via Zoom)</p>
             <a
-              href={AppConstant.ZOOM_LINK}
+              
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-300 underline hover:text-blue-400"
             >
-              Join via Zoom
+              
             </a>
           </div>
 
           {/* Tuesday – Avenor Park Prayer */}
           <div>
             <h4 className="text-xl font-bold text-white">Tuesday – Avenor Park Prayer</h4>
-            <p className="text-yellow-300">6:00 pm – 7:30 pm (In-person & Zoom)</p>
+            <p className="text-yellow-300">6:00 pm EST – 7:30 pm EST(In-person & Zoom)</p>
           </div>
 
           {/* Friday – Aijalon Hour */}
           <div>
             <h4 className="text-xl font-bold text-white">Friday – Aijalon Hour</h4>
-            <p className="text-yellow-300">12:00 pm – 1:00 pm (via Zoom)</p>
+            <p className="text-yellow-300">12:00 pm EST – 1:00 pm EST (via Zoom)</p>
+          </div>
+
+
+          <div>
+            <h4 className="text-xl font-bold text-white">Friday – Church Service</h4>
+            <p className="text-yellow-300">7:00 pm EST – 8:30 pm EST (In person & Online)</p>
           </div>
         </div>
 

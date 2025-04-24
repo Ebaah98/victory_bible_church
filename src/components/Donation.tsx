@@ -34,13 +34,17 @@ function Donation() {
       </div>
 
       <div className="bg-gray-100 p-6 rounded-md border border-gray-200">
-        <h3 className="text-xl font-semibold mb-3 text-gray-800">Need Help Giving?</h3>
+        <h3 className="text-xl font-semibold mb-3 text-gray-800"> FAQs</h3>
         <p className="text-gray-700">
-          If you need assistance or have questions about how to give to the ministry, please email us at:
-        </p>
-        <p className="mt-3 text-green-700 font-semibold text-lg">
-          {AppConstant.churchEmail}
-        </p>
+    
+
+🤝❓How can I get involved?
+<br /> 
+Come visit us! You can join a ministry, attend Bible study, or serve in your area of gifting.
+<br /> <br />
+📬 For any questions or prayer requests:
+Call us at 718-994-1981 or 203-821-1660, or email solidrocksanctuary1@gmail.com. </p>
+       
       </div>
     </div>
   );

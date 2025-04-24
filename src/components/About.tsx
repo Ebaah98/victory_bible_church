@@ -76,13 +76,13 @@ function About({}: Props) {
                     className="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300"
                   >
                     <img
-                      src={pastor.image}
-                      alt={pastor.name}
+                      src={pastor?.image}
+                      alt={pastor?.name}
                       className="w-full object-cover aspect-square"
                     />
                     <div className="p-4 text-center">
-                      <h2 className="text-xl font-semibold text-gray-800">{pastor.name}</h2>
-                      <p className="text-md text-gray-600">{pastor.role}</p>
+                      <h2 className="text-xl font-semibold text-gray-800">{pastor?.name}</h2>
+                      <p className="text-md text-gray-600">{pastor?.role}</p>
                     </div>
                   </div>
                 ))}
