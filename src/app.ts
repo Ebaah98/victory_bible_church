@@ -82,7 +82,7 @@ export default {
     {
       name: "Bishop Elijah P. Saforo",
       role: "North America Regional Overseer",
-      image: "/Bishop-E.JPG",
+      image: "/bishop-E2.JPG",
     },
     {
       name: "Rev. Godwin Aryeetey",
@@ -92,7 +92,7 @@ export default {
     {
       name: "Pastor Larry Awagah",
       role: "Assistant Pastor",
-      image: "/pastor-larry2.jpeg",
+      image: "/Pastor-larry2.jpeg",
     },
     ,
 
