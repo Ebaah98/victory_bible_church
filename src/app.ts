@@ -53,7 +53,6 @@ export default {
   eventImages: [
     '/3.JPEG',
     '/walk.jpeg',
-    '/7.png',
     '/24.JPG',
     '/10.jpg',
     '/11.JPG',
