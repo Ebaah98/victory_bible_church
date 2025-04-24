@@ -52,6 +52,7 @@ export default {
   churchEmail: "solidrocksanctuary1@gmail.com",
   eventImages: [
     '/3.JPEG',
+    '/walk.jpeg',
     '/7.png',
     '/24.JPG',
     '/10.jpg',
