@@ -5,8 +5,8 @@ const ChurchFlyer = () => {
     churchName: "Victory Bible Church International",
     churchAddress: "1 Tuckahoe Rd, Yonkers, NY 10710",
     ZOOM_LINK: "https://us02web.zoom.us/j/3202413847?pwd=iLzW1Gkoybk",
-    YOUTUBE_LINK: "https://www.youtube.com/channel/your-channel",
-    FACEBOOK_LINK: "https://www.facebook.com/yourpage",
+    YOUTUBE_LINK: "https://youtube.com/@vbcisrs?si=j1oQUyz1X0kGLfmM",
+    FACEBOOK_LINK: "https://www.facebook.com/share/1ARXapZEti/?mibextid=wwXIfr",
   };
 
   return (
