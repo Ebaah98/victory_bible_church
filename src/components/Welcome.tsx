@@ -9,10 +9,7 @@ function Welcome({}: Props) {
         This is Victory Bible Church Solid Rock Sanctuary
       </h1>
       <span>
-        At Victory Bible Solid Rock Sanctuary, we strive to create a welcoming
-        and inclusive community where individuals can grow in their and find
-        support. Our doors are always open to those seeking spirtual guidance
-        and a sense of belonging.
+      At Victory Bible Solid Rock Sanctuary, we strive to create a welcoming and inclusive community where individuals can grow in their faith and find meaningful support through fellowship, prayer, and encouragement. Our doors are always open to those seeking spiritual guidance and a true sense of belonging.
       </span>
     </div>
   );

@@ -54,14 +54,8 @@ function About({}: Props) {
             Our History
           </h2>
           <p>
-            Victory Bible Church – Solid Rock Sanctuary began with a small group
-            of faithful believers, united by a desire to go deeper in God and
-            raise a generation built on the Rock—Jesus Christ. Under the divine
-            direction of our founding father, Bishop N.A. Tackie Yarboi, and
-            through prayer and the leading of the Holy Spirit, God saw it fit
-            that we would spread His Word in Yonkers, New York. From humble
-            beginnings, we’ve grown into a vibrant and passionate community
-            committed to pursuing God and serving His people with purpose.
+          Victory Bible Church – Solid Rock Sanctuary began with a small group of faithful believers, united by a desire to go deeper in God and raise a generation built on the Rock—Jesus Christ. Under the divine direction of our founding father, Bishop N.A. Tackie Yarboi, and in consultation with Bishop Elijah P. Saforo, the vision for our sanctuary was prayerfully established. Through prayer and the leading of the Holy Spirit, God saw it fit that we would spread His Word in Yonkers, New York.
+From humble beginnings, we’ve grown into a vibrant and passionate community committed to pursuing God and serving His people with purpose.
           </p>
         </section>
 
