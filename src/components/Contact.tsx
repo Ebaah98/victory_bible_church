@@ -1,129 +1,177 @@
-import React from "react";
+'use client';
+
+import React from 'react';
+import AppConstant from '@/app';
+import {
+  Box,
+  Container,
+  Heading,
+  Text,
+  Stack,
+  SimpleGrid,
+  Button,
+  useColorModeValue,
+  VStack,
+  Badge,
+  HStack,
+  Link,
+  Tag,
+  Divider,
+  Icon,
+} from '@chakra-ui/react';
+import { MapPin, Phone, Mail, Video, Facebook, Youtube, Church, Users, Clock, Music, HandHeart } from 'lucide-react';
 
 const ChurchFlyer = () => {
-  const AppConstant = {
-    churchName: "Victory Bible Church International",
-    churchAddress: "1 Tuckahoe Rd, Yonkers, NY 10710",
-    ZOOM_LINK: "https://us02web.zoom.us/j/3202413847?pwd=iLzW1Gkoybk",
-    YOUTUBE_LINK: "https://youtube.com/@vbcisrs?si=j1oQUyz1X0kGLfmM",
-    FACEBOOK_LINK: "https://www.facebook.com/share/1ARXapZEti/?mibextid=wwXIfr",
-  };
+  const cardBg = useColorModeValue('white', 'gray.800');
+  const innerBg = useColorModeValue('gray.50', 'gray.700');
+  const textMuted = useColorModeValue('gray.600', 'gray.200');
+  const borderColor = useColorModeValue('gray.200', 'gray.600');
 
   return (
-    <div
-      className="flex items-center bg-[#3d0c2f] justify-center text-white font-sans p-[5%] md:p-[10%] border-4 shadow-4xl"
-      id="contact"
-    >
-      <div className="relative bg-gradient-to-b from-[#3d0c2f] to-[#2d0c1e] rounded-2xl shadow-lg max-w-xl w-full p-6 border border-pink-500/30">
-        {/* Title */}
-        <div className="text-center mb-6">
-          <h2 className="text-lg uppercase tracking-wide text-gray-300">
-            Victory Bible Church International
-          </h2>
-          <h3 className="text-sm text-gray-400 font-medium">
-            {AppConstant.churchName} (Yonkers)
-          </h3>
-          <p className="italic text-yellow-400 mt-2">You are welcome</p>
-        </div>
+    <Box id="contact" bg={useColorModeValue('gray.50', 'gray.900')} py={12}>
+      <Container maxW="7xl">
+        <Box
+          bg={cardBg}
+          color={useColorModeValue('gray.900', 'white')}
+          rounded="2xl"
+          shadow="xl"
+          border="1px solid"
+          borderColor={borderColor}
+          p={{ base: 6, md: 8 }}
+        >
+          <Stack spacing={8}>
+            <Stack textAlign="center" spacing={2}>
+              <Tag colorScheme="purple" size="lg" alignSelf="center">
+                Visit & Connect
+              </Tag>
+              <Heading size="lg">Victory Bible Church International</Heading>
+              <Text color={textMuted}>{AppConstant.churchName} (Yonkers)</Text>
+              <Text color={useColorModeValue('purple.600', 'purple.200')} fontWeight="semibold">
+                You are welcome 🙌
+              </Text>
+            </Stack>
 
-        {/* Weekly Activities */}
-        <div className="bg-[#4a1030] rounded-xl p-6 space-y-4">
-          {/* Sunday Service */}
-          <div>
-            <h4 className="text-xl font-bold text-white">Sunday Service</h4>
-            <p className="text-yellow-300">10:00 am EST – 12:30 pm EST (In-person & Online)</p>
-          </div>
+            <SimpleGrid columns={{ base: 1, md: 2 }} spacing={5}>
+              <Box bg={innerBg} rounded="xl" p={5} border="1px solid" borderColor={borderColor}>
+                <Heading size="md" mb={3}>
+                  Gatherings
+                </Heading>
+                <SimpleGrid columns={{ base: 1, sm: 2 }} spacing={4} color={useColorModeValue('gray.800', 'gray.100')}>
+                  <Activity title="Sunday Service" time="10:00 am – 12:30 pm (In-person & Online)" icon={Church} />
+                  <Activity title="Mon–Thu Prayer" time="12:00 pm – 1:00 pm (Zoom)" icon={HandHeart} />
+                  <Activity title="Leadership Meeting" time="Mon 9:00 pm – 10:00 pm (Zoom)" icon={Users} />
+                  <Activity title="Avenor Park Prayer" time="Tue 6:00 pm – 7:30 pm (In-person & Zoom)" icon={MapPin} />
+                  <Activity title="Aijalon Hour" time="Fri 12:00 pm – 1:00 pm (Zoom)" icon={Clock} />
+                  <Activity title="Friday Service" time="Fri 7:00 pm – 8:30 pm (In-person & Online)" icon={Music} />
+                </SimpleGrid>
+              </Box>
 
-          {/* Monday – Thursday Prayer */}
-          <div>
-            <h4 className="text-xl font-bold text-white">Monday – Thursday Prayer</h4>
-            <p className="text-yellow-300">12:00 pm EST – 1:00 pm EST (via Zoom)</p>
-          </div>
+              <Box bg={innerBg} rounded="xl" p={5} border="1px solid" borderColor={borderColor}>
+                <Heading size="md" mb={3}>
+                  Join Us
+                </Heading>
+                <VStack align="start" spacing={3} color={textMuted}>
+                  <HStack spacing={3}>
+                    <Icon as={MapPin} color={useColorModeValue('purple.600', 'purple.200')} />
+                    <Text fontWeight="bold">Address:</Text>
+                    <Text color={useColorModeValue('gray.800', 'gray.100')}>{AppConstant.churchAddress}</Text>
+                  </HStack>
+                  <HStack spacing={3}>
+                    <Icon as={Phone} color={useColorModeValue('pink.600', 'pink.200')} />
+                    <Text fontWeight="bold">Phone:</Text>
+                    <Link href={`tel:${AppConstant.phoneNumber}`} color={useColorModeValue('pink.600', 'pink.200')}>
+                      {AppConstant.phoneNumber}
+                    </Link>
+                  </HStack>
+                  <HStack spacing={3}>
+                    <Icon as={Mail} color={useColorModeValue('pink.600', 'pink.200')} />
+                    <Text fontWeight="bold">Email:</Text>
+                    <Link href={`mailto:${AppConstant.churchEmail}`} color={useColorModeValue('pink.600', 'pink.200')}>
+                      {AppConstant.churchEmail}
+                    </Link>
+                  </HStack>
+                  <HStack spacing={3} pt={2}>
+                    <Button
+                      as={Link}
+                      href={AppConstant.ZOOM_LIVE}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      colorScheme="pink"
+                      size="sm"
+                    >
+                      <HStack spacing={2}>
+                        <Icon as={Video} boxSize={4} />
+                        <Text>Zoom Access</Text>
+                      </HStack>
+                    </Button>
+                    <Button
+                      as={Link}
+                      href="https://maps.app.goo.gl/trPPBJG33yJ8FpSd7"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      colorScheme="purple"
+                      variant="outline"
+                      size="sm"
+                    >
+                      <HStack spacing={2}>
+                        <Icon as={MapPin} boxSize={4} />
+                        <Text>Directions</Text>
+                      </HStack>
+                    </Button>
+                  </HStack>
+                </VStack>
+                <Divider my={4} />
+                <Stack direction="row" spacing={3} align="center">
+                  <Badge colorScheme="red">LIVE</Badge>
+                  <Text color={useColorModeValue('gray.800', 'gray.100')}>VBCI Yonkers</Text>
+                </Stack>
+              </Box>
+            </SimpleGrid>
 
-          {/* Monday – Leadership Meeting */}
-          <div>
-            <h4 className="text-xl font-bold text-white">Monday – Leadership Meeting</h4>
-            <p className="text-yellow-300">9:00 pm EST - 10:00 pm EST (via Zoom)</p>
-            <a
-              
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-300 underline hover:text-blue-400"
-            >
-              
-            </a>
-          </div>
-
-          {/* Tuesday – Avenor Park Prayer */}
-          <div>
-            <h4 className="text-xl font-bold text-white">Tuesday – Avenor Park Prayer</h4>
-            <p className="text-yellow-300">6:00 pm EST – 7:30 pm EST(In-person & Zoom)</p>
-          </div>
-
-          {/* Friday – Aijalon Hour */}
-          <div>
-            <h4 className="text-xl font-bold text-white">Friday – Aijalon Hour</h4>
-            <p className="text-yellow-300">12:00 pm EST – 1:00 pm EST (via Zoom)</p>
-          </div>
-
-
-          <div>
-            <h4 className="text-xl font-bold text-white">Friday – Church Service</h4>
-            <p className="text-yellow-300">7:00 pm EST – 8:30 pm EST (In person & Online)</p>
-          </div>
-        </div>
-
-        {/* Zoom General Button */}
-        <div className="mt-6 text-center">
-          <a
-            href={AppConstant.ZOOM_LINK}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-pink-600 text-white px-4 py-2 rounded mt-2 hover:bg-pink-700"
-          >
-            General Zoom Access
-          </a>
-        </div>
-
-        {/* Church Address */}
-        <div className="text-center mt-6">
-          <p className="font-bold text-white">IN PERSON @ CHURCH</p>
-          <p className="text-sm text-gray-300">{AppConstant.churchAddress}</p>
-        </div>
-
-        {/* Footer Live Section */}
-        <div className="flex justify-center items-center gap-2 mt-4">
-          <div className="bg-red-600 p-1 rounded">
-            <span className="text-white text-sm font-bold">LIVE</span>
-          </div>
-          <p className="text-sm">VBCI Yonkers</p>
-        </div>
-
-        {/* Social Media Links */}
-        <p className="text-sm text-center flex mt-4 gap-2 justify-center items-center">
-          <span>Watch Us Live At</span>
-          <span>
-            <a href={AppConstant.YOUTUBE_LINK} target="_blank" className="hover:opacity-80 transition-all">
-              {/* YouTube SVG */}
-              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 48 48">
-                <path fill="#FF3D00" d="M43.2,33.9c-0.4,2.1-2.1,3.7-4.2,4c-3.3,0.5-8.8,1.1-15,1.1c-6.1,0-11.6-0.6-15-1.1c-2.1-0.3-3.8-1.9-4.2-4C4.4,31.6,4,28.2,4,24c0-4.2,0.4-7.6,0.8-9.9c0.4-2.1,2.1-3.7,4.2-4C12.3,9.6,17.8,9,24,9c6.2,0,11.6,0.6,15,1.1c2.1,0.3,3.8,1.9,4.2,4c0.4,2.3,0.9,5.7,0.9,9.9C44,28.2,43.6,31.6,43.2,33.9z"></path>
-                <path fill="#FFF" d="M20 31L20 17 32 24z"></path>
-              </svg>
-            </a>
-          </span>
-          <span>
-            <a href={AppConstant.FACEBOOK_LINK} target="_blank" className="hover:opacity-80 transition-all">
-              {/* Facebook SVG */}
-              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 48 48">
-                <path fill="#039be5" d="M24 5A19 19 0 1 0 24 43A19 19 0 1 0 24 5Z"></path>
-                <path fill="#fff" d="M26.572,29.036h4.917l0.772-4.995h-5.69v-2.73c0-2.075,0.678-3.915,2.619-3.915h3.119v-4.359c-0.548-0.074-1.707-0.236-3.897-0.236c-4.573,0-7.254,2.415-7.254,7.917v3.323h-4.701v4.995h4.701v13.729C22.089,42.905,23.032,43,24,43c0.875,0,1.729-0.08,2.572-0.194V29.036z"></path>
-              </svg>
-            </a>
-          </span>
-        </p>
-      </div>
-    </div>
+            <Stack direction="row" spacing={4} align="center" justify="center" color={textMuted}>
+              <Text>Watch us live:</Text>
+              <HStack spacing={2}>
+                <HStack
+                  as={Link}
+                  href={AppConstant.YOUTUBE_LINK}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  color="pink.500"
+                  spacing={1}
+                >
+                  <Icon as={Youtube} boxSize={4} />
+                  <Text>YouTube</Text>
+                </HStack>
+                <HStack
+                  as={Link}
+                  href={AppConstant.FACEBOOK_LINK}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  color="blue.400"
+                  spacing={1}
+                >
+                  <Icon as={Facebook} boxSize={4} />
+                  <Text>Facebook</Text>
+                </HStack>
+              </HStack>
+            </Stack>
+          </Stack>
+        </Box>
+      </Container>
+    </Box>
   );
-}
+};
 
 export default ChurchFlyer;
+
+const Activity = ({ title, time, icon: IconComp }: { title: string; time: string; icon: React.ElementType }) => (
+  <Stack spacing={1}>
+    <HStack spacing={2} align="center">
+      <Icon as={IconComp} boxSize={4} color={useColorModeValue('purple.600', 'purple.200')} />
+      <Text fontWeight="bold">{title}</Text>
+    </HStack>
+    <Text color="gray.600" _dark={{ color: 'gray.200' }}>
+      {time}
+    </Text>
+  </Stack>
+);

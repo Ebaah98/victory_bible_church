@@ -1,29 +1,51 @@
-import React from "react";
-import AppConstant from "@/app";
+'use client';
+
+import React from 'react';
+import AppConstant from '@/app';
+import { Box, Container, Heading, Text, SimpleGrid, Stack, useColorModeValue } from '@chakra-ui/react';
 
 const Departments = () => {
+  const sectionBg = useColorModeValue('gray.50', 'gray.900');
+  const cardBg = useColorModeValue('white', 'gray.800');
+  const cardHover = useColorModeValue('purple.50', 'gray.700');
+  const titleColor = useColorModeValue('purple.800', 'purple.200');
+  const textColor = useColorModeValue('gray.700', 'gray.200');
+  const borderColor = useColorModeValue('gray.200', 'gray.700');
+
   return (
-    <div className="max-w-7xl mx-auto p-8 bg-white shadow-lg rounded-md mt-10 mb-10" id="department">
-      <h2 className="text-3xl font-bold text-purple-800 mb-6 text-center">
-        Departments & Ministries
-      </h2>
-      <p className="mb-6 text-gray-700 text-center">
-        At Victory Bible Church - Solid Rock Sanctuary, we are a vibrant family
-        made up of several ministries and departments designed to meet the
-        spiritual and practical needs of our congregation. Here are some of the
-        key departments:
-      </p>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-        {AppConstant.departments.map((dept, idx) => (
-          <div
-            key={idx}
-            className="bg-purple-100 px-6 py-4 rounded-lg shadow-md hover:bg-purple-200 transition transform hover:scale-105"
-          >
-            <h3 className="text-xl font-semibold text-purple-700">{dept}</h3>
-          </div>
-        ))}
-      </div>
-    </div>
+    <Box id="department" py={12} bg={sectionBg}>
+      <Container maxW="7xl">
+        <Stack spacing={4} textAlign="center" mb={8}>
+          <Heading size="lg" color={titleColor}>
+            Departments & Ministries
+          </Heading>
+          <Text color={textColor}>
+            Discover the teams that serve, worship, and build community at Solid Rock Sanctuary.
+          </Text>
+        </Stack>
+        <SimpleGrid columns={{ base: 1, sm: 2, lg: 3 }} spacing={5}>
+          {AppConstant.departments.map((dept, idx) => (
+            <Box
+              key={idx}
+              px={5}
+              py={5}
+              rounded="xl"
+              bg={cardBg}
+              color={titleColor}
+              border="1px solid"
+              borderColor={borderColor}
+              shadow="md"
+              transition="all 0.2s ease"
+              _hover={{ bg: cardHover, shadow: 'lg' }}
+            >
+              <Text fontWeight="semibold" textAlign="center" fontSize="lg">
+                {dept}
+              </Text>
+            </Box>
+          ))}
+        </SimpleGrid>
+      </Container>
+    </Box>
   );
 };
 export default Departments;

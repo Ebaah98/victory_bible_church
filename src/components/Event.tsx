@@ -1,36 +1,45 @@
 "use client";
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
-import AppConstant from '@/app'
-import "swiper/css";
-import 'swiper/css/autoplay'
 
-type Props = {};
+import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper/modules';
+import AppConstant from '@/app';
+import 'swiper/css';
+import 'swiper/css/autoplay';
+import { Box, useColorModeValue } from '@chakra-ui/react';
 
-function Event({}: Props) {
+function Event() {
+  const bg = useColorModeValue('white', 'gray.900');
+
   return (
-    <div className="p-4 shadow-2xl">
-          <Swiper
-              modules={[Autoplay]}
+    <Box className="p-4 shadow-2xl" bg={bg} rounded="xl" id="events">
+      <Swiper
+        modules={[Autoplay]}
         draggable
         spaceBetween={20}
         autoplay={{
-          delay:2000
+          delay: 2000,
         }}
-              loop
+        loop
         slidesPerView={3}
-      
       >
         {AppConstant.eventImages.map((res) => {
           return (
-            <SwiperSlide >
-              <img src={res} alt={res} className="aspect-square rounded-lg" />
+            <SwiperSlide key={res}>
+              <Box
+                as="img"
+                src={res}
+                alt={res}
+                rounded="lg"
+                objectFit="cover"
+                w="100%"
+                h="100%"
+              />
             </SwiperSlide>
           );
         })}
       </Swiper>
-    </div>
+    </Box>
   );
 }
 

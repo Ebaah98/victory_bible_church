@@ -25,6 +25,41 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Dark mode touch-ups for Tailwind-styled blocks */
+.chakra-ui-dark body {
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+.chakra-ui-dark .bg-white {
+  background-color: #111827 !important;
+  color: #e2e8f0 !important;
+}
+
+.chakra-ui-dark .bg-gray-100,
+.chakra-ui-dark .bg-slate-50 {
+  background-color: #0b1220 !important;
+  color: #e2e8f0 !important;
+}
+
+.chakra-ui-dark .text-gray-800,
+.chakra-ui-dark .text-gray-700,
+.chakra-ui-dark .text-slate-800 {
+  color: #e5e7eb !important;
+}
+
+.chakra-ui-dark .border-gray-200,
+.chakra-ui-dark .border-slate-200,
+.chakra-ui-dark .border-gray-300 {
+  border-color: #1f2937 !important;
+}
+
+.chakra-ui-dark .shadow-lg,
+.chakra-ui-dark .shadow-md {
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.45),
+    0 8px 10px -6px rgba(0, 0, 0, 0.45) !important;
+}
+
 .hero{
   background: url('/hero.jpg');
   width: 100vw;
